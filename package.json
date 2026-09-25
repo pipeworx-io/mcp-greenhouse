@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-greenhouse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Greenhouse MCP Pack — wraps the Greenhouse Harvest API v1",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-greenhouse": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "greenhouse"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-greenhouse"
+    "url": "git+https://github.com/pipeworx-io/mcp-greenhouse.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-a5963a2857987102bfb639d66d3e8565d276f1e7ae43f2e929d697f68e8bb240",
+    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
   }
 }

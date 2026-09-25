@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/greenhouse",
-  "title": "greenhouse",
+  "title": "Greenhouse",
   "description": "Greenhouse MCP Pack — wraps the Greenhouse Harvest API v1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/greenhouse",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-greenhouse",
