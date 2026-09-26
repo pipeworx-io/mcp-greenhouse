@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-greenhouse",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Greenhouse MCP Pack — wraps the Greenhouse Harvest API v1",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-a5963a2857987102bfb639d66d3e8565d276f1e7ae43f2e929d697f68e8bb240",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-550489adadd09428c6ef83ce9f472b620f67ef3e84177275a738ca5079db9c97",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
