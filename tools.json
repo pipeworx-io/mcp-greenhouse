@@ -1,0 +1,128 @@
+[
+  {
+    "name": "greenhouse_list_candidates",
+    "description": "Search candidates in your ATS. Returns names, IDs, email addresses, and application status. Use greenhouse_get_candidate for full profile details.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Greenhouse Harvest API key"
+        },
+        "per_page": {
+          "type": "number",
+          "description": "Results per page (max 500, default 50)"
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number (default 1)"
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "greenhouse_get_candidate",
+    "description": "Get full candidate profile by ID. Returns resume, contact info, application history, interviews, and notes.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Greenhouse Harvest API key"
+        },
+        "id": {
+          "type": "number",
+          "description": "Candidate ID"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "greenhouse_list_jobs",
+    "description": "Browse open and closed job postings. Returns titles, IDs, departments, statuses, and posting dates. Use greenhouse_get_job for full details and candidate pipeline.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Greenhouse Harvest API key"
+        },
+        "status": {
+          "type": "string",
+          "description": "Filter by status: open, closed, draft (optional)"
+        },
+        "per_page": {
+          "type": "number",
+          "description": "Results per page (max 500, default 50)"
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number (default 1)"
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "greenhouse_get_job",
+    "description": "Get complete job details by ID. Returns description, requirements, hiring team, and linked applications.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Greenhouse Harvest API key"
+        },
+        "id": {
+          "type": "number",
+          "description": "Job ID"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "greenhouse_list_applications",
+    "description": "View job applications across your pipeline. Returns applicant names, job IDs, application status, and submission dates. Filter by job or stage (e.g., 'screening', 'interview').",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Greenhouse Harvest API key"
+        },
+        "job_id": {
+          "type": "number",
+          "description": "Filter by job ID (optional)"
+        },
+        "status": {
+          "type": "string",
+          "description": "Filter by status: active, converted, hired, rejected (optional)"
+        },
+        "per_page": {
+          "type": "number",
+          "description": "Results per page (max 500, default 50)"
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number (default 1)"
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  }
+]
