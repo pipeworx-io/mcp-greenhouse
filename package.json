@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-greenhouse",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Greenhouse MCP Pack — wraps the Greenhouse Harvest API v1",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "greenhouse",
     "gatewaySlug": "greenhouse",
-    "sourceHash": "v1-145f06086da375d58b527665fdb756e2501d0424d26175d0070cf5f2359e8707",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-7ca259117dd42feb423ed5cc1eaf121f0f20ae683b93a0ac95ed6fc9b8f13ea3",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
